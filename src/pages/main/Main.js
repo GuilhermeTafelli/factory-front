@@ -15,7 +15,7 @@ const Main = () => {
     }, [])
 
     const loadPurchaseOrders = async () => {
-        const response = await api.get('/purchase-orders?page=1&size=50');
+        const response = await api.get('/purchase-orders?page=1&size=500');
         setState({
             purchaseOrders: response.data.purchaseOrders,
             page: response.data.page,
